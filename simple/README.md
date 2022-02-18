@@ -1,4 +1,4 @@
-# state_management_simple
+# simple
 
 A new Flutter project.
 

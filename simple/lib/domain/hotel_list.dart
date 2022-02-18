@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:state_management_data/models/hotel.dart';
+import '../data/hotel.dart';
 
 String _hotelsURL =
     'https://run.mocky.io/v3/ac888dc5-d193-4700-b12c-abb43e289301';

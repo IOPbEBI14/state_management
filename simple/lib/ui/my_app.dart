@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../logic/hotel_list.dart';
+import '../domain/hotel_list.dart';
 import 'home_view.dart';
 
 class MyApp extends StatelessWidget {

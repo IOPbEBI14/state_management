@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.state_management_simple">
+    package="com.example.simple">
    <application
-        android:label="state_management_simple"
+        android:label="simple"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
