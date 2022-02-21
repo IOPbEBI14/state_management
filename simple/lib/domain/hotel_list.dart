@@ -7,7 +7,7 @@ String _hotelsURL =
 
 class HotelList with ChangeNotifier {
   Future<List<HotelPreview>>? hotels;
-  Dio _dio = Dio();
+  final Dio _dio = Dio();
   bool isError = false;
   late String dioError;
 
@@ -25,7 +25,6 @@ class HotelList with ChangeNotifier {
       hotels = Future.error(e.toString());
       dioError = e.message;
     }
-    ;
     notifyListeners();
   }
 
