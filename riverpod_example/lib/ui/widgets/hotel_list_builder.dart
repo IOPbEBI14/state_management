@@ -17,7 +17,7 @@ class HotelListBuilder extends StatelessWidget {
             return const CircularProgressIndicator();
           case ConnectionState.done:
             if (snapshot.hasError) {
-              return Text(hotelList.dioError);
+              return Text(snapshot.error.toString());
             } else if (snapshot.hasData) {
               return GridViewBuilder(snapshot: snapshot);
             } else {
