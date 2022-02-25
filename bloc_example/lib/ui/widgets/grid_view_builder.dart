@@ -36,7 +36,7 @@ class GridViewBuilder extends StatelessWidget {
                         snapshot.data[index].name,
                         textAlign: TextAlign.center,
                       ),
-                      BlocBuilder<CurrentHotelBloc,String>(
+                      BlocBuilder<CurrentHotelBloc, String>(
                           builder: (_, state) {
                         return TextButton(
                           style: ElevatedButton.styleFrom(
@@ -48,9 +48,9 @@ class GridViewBuilder extends StatelessWidget {
                             onPrimary: Colors.white, // foreground
                           ),
                           onPressed: () {
-                            context
-                                .read<CurrentHotelBloc>()
-                                .add(SetCurrentHotelState(snapshot.data[index].uuid));
+                            context.read<CurrentHotelBloc>().add(
+                                SetCurrentHotelState(
+                                    snapshot.data[index].uuid));
                           },
                           child: Text(
                             (snapshot.data[index].uuid == state.toString())
