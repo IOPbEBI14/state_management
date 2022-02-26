@@ -49,7 +49,7 @@ class GridViewBuilder extends StatelessWidget {
                           ),
                           onPressed: () {
                             context.read<CurrentHotelBloc>().add(
-                                SetCurrentHotelState(
+                                SetCurrentHotel(
                                     snapshot.data[index].uuid));
                           },
                           child: Text(

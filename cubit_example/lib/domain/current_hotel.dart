@@ -1,11 +1,9 @@
-import 'dart:async';
-
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class CurrentHotelBloc extends Cubit<String> {
+class CurrentHotelCubit extends Cubit<String> {
   String currentHotel = '';
 
-  CurrentHotelBloc() : super('');
+  CurrentHotelCubit() : super('');
 
   void setCurrentHotel(String value) {
     emit(value);

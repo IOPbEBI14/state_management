@@ -1,4 +1,4 @@
-import 'package:bloc_example/domain/current_hotel.dart';
+import '../../domain/current_hotel.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -24,8 +24,8 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: BlocProvider<CurrentHotelBloc>(
-          create: (_) => CurrentHotelBloc(),
+      home: BlocProvider<CurrentHotelCubit>(
+          create: (_) => CurrentHotelCubit(),
           child: const HomeView()),
     );
   }
